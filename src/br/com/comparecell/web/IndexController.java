@@ -192,7 +192,7 @@ public class IndexController extends SelectorComposer<Component>{
 		
 		}
 		
-		//Refresh da pagina
+		//direciona para o rank
 		Executions.sendRedirect("rank.zul");
 	}
 	
