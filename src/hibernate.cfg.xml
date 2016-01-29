@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost/comparecell</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">956596</property>
+   
+    <!-- c3p0 -->
+    <property name="hibernate.c3p0.acquire_increment">1</property>
+    <property name="hibernate.c3p0.idle_test_period">60</property>
+    <property name="hibernate.c3p0.timeout">120</property>
+    <property name="hibernate.c3p0.max_size">999999</property>
+    <property name="hibernate.c3p0.min_size">1</property>
+    <property name="hibernate.c3p0.max_statements">10</property>
+    <property name="hibernate.c3p0.preferredTestQuery">select 1;</property>
+    
+    <!-- Connection auto reconnect after long inactivity -->
+    <property name="connection.autoReconnect">true</property>
+    <property name="connection.autoReconnectForPools">true</property>
+    <property name="connection.is-connection-validation-required">true</property>
+    
+    <!-- Exibe comandos SQL na saída padrão. -->
+    <property name="connection.autocommit">false</property>
+    <property name="use_sql_comments">false</property>
+    <property name="hibernate.format_sql">false</property>
+    <property name="current_session_context_class">thread</property>
+    <property name="show_sql">true</property>
+    
+    
+    <!-- Arquivos de mapeamento OO/Relacional -->
+    <mapping class="br.com.comparecell.entidades.Aparelho"/>
+    <mapping class="br.com.comparecell.entidades.Rank"/>
+   
+  </session-factory>
+</hibernate-configuration>

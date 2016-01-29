@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title = "CompareCell"?>
+
+
+<zk xmlns:h="http://www.w3.org/1999/xhtml"
+	xmlns="http://www.zkoss.org/2005/zul">
+
+	<borderlayout height="100%" 
+		apply="br.com.comparecell.web.IndexController">
+
+
+		<north size="12%" splittable="false" border="none" collapsible="false">
+			<div style="background:#B8D335">
+				<label value="COMPARE CELL"
+					style="color:white;font-size:40px" />
+				<button id="btnCompara" label="Comparar"></button>
+					
+				
+				<button id="btnRank" label="Rank" disabled="false"></button>
+			</div>
+
+
+
+		</north>
+
+		<west size="50%"   border="none" >
+
+			<div style="background:#55AD84">
+				<label value="Modelo"
+					style="color:white;font-size:50px" />
+				<combobox id="_cellA"></combobox>
+				<button id="btnFavCellA" label="Favorito"></button>
+			</div>
+				
+		</west>
+
+		<east size="50%" flex="false"  border="none" >
+			<div style="background:#E1D354">
+				<label value="Modelo"
+					style="color:white;font-size:50px" />
+				<combobox id="_cellB"></combobox>
+				<button id="btnFavCellB" label="Favorito"></button>
+			</div>
+		</east>
+
+
+
+
+
+
+
+<south size="79%" border="none" >
+	<borderlayout>
+			
+			
+			
+			<west size="15%" border="none">
+					<vbox>
+						<listbox id="_lsGridTitulo" height="100%" />
+					</vbox>
+			</west>
+			
+			<center border="none"> 
+					<vbox>
+						<listbox id="_lsCellPrincipal" height="100%"  />
+					</vbox>
+			</center>
+			
+			<east size="50%" border="none">
+			
+			<vbox>
+						<listbox id="_lsCellComparado" height="100%"  />
+					</vbox>			
+			</east>
+
+
+	</borderlayout>
+
+
+
+			
+</south>
+
+
+
+
+
+	</borderlayout>
+
+
+</zk>
+
+
+
+

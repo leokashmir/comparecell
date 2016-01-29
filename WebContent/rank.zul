@@ -1,0 +1,35 @@
+<?page title="Rank" contentType="text/html;charset=UTF-8"?>
+<zk>
+
+
+
+<borderlayout apply="br.com.comparecell.web.RankController">
+	<north  border="none" > 
+		
+	 </north>
+	
+	<west size="30%"  border="none"></west>	
+	<center  border="none"> 
+				
+				<div style="background:#B8D335" align="center">
+			<label value="RANK"
+					style="color:white;font-size:40px" />
+			
+	
+				
+				<vbox>
+						<listbox id="_lsGridRank"  />
+						<button id="btnVoltar" label="Voltar" disabled="false"></button>
+				</vbox>
+				</div>
+	</center>
+	<east size="30%"  border="none">
+	
+	</east>
+	
+	
+</borderlayout>
+
+
+
+</zk>
