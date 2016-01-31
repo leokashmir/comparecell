@@ -4,9 +4,19 @@
   <session-factory>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost/comparecell</property>
+    
+    <!-- Openshift Config -->
+    <property name="hibernate.connection.url">jdbc:mysql://127.12.196.130:3306/app</property>
+    <property name="hibernate.connection.username">adminlQuBBAK</property>
+    <property name="hibernate.connection.password">h-eU8QJFjqKp</property>
+   
+    <!--   
+    <property name="hibernate.connection.url">jdbc:mysql://localhost/comparacell</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">956596</property>
+     -->
+   
+    <!-- c3p0 -->
    
     <!-- c3p0 -->
     <property name="hibernate.c3p0.acquire_increment">1</property>
